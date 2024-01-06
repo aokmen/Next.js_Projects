@@ -3,7 +3,7 @@
 //* const res = await fetch(URL, { cache: "force-cache" }); default
 //* const res = await fetch(URL, { cache: "no-store" }); cache'leme
 //*   const res = await fetch(URL, { next: { revalidate: 10 } }); belirlenen saniye cinsinden süre sonunda veriyi tekrar çek tekrar
-const URL = `http://localhost:8000/users`;
+const URL = `http://localhost:8000/users`; 
 
 //* force-cahhe
 export const getUsers = async () => {
