@@ -8,7 +8,7 @@ const TeamDetail = async ({ params: { id } }) => {
   return (
     <div>
       <h1 className="text-2xl text-center">Team Person</h1>
-      <PersonCard {...person} />
+      <PersonCard {...person} /> 
     </div>
   );
 };
