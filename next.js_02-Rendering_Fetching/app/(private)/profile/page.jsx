@@ -10,7 +10,7 @@ const Profile = async () => {
       <h2 className="text-2xl pl-8">Friends List</h2>
       {friends.map((person) => (
         <TeamItem key={person.id} {...person} />
-      ))}
+      ))} 
     </div>
   );
 };
