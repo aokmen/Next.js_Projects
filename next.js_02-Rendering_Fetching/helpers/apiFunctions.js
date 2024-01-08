@@ -56,7 +56,7 @@ export const addFriends = async (friend) => {
       "Content-Type": "application/json",
       // 'Content-Type': 'application/x-www-form-urlencoded',
     },
-    body: JSON.stringify(friend),
+    body: JSON.stringify(friend), 
   });
   if (!res.ok) {
     throw new Error("Failed to fetch data");
