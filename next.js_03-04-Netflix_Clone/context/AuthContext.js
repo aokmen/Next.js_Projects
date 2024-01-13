@@ -39,7 +39,7 @@ const AuthContextProvider = ({ children }) => {
       toastErrorNotify(error.message);
     }
   };
- 
+
   const login = async (email, password) => {
     try {
       await signInWithEmailAndPassword(auth, email, password);

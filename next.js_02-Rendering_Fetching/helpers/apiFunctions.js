@@ -3,7 +3,7 @@
 //* const res = await fetch(URL, { cache: "force-cache" }); default
 //* const res = await fetch(URL, { cache: "no-store" }); cache'leme
 //*   const res = await fetch(URL, { next: { revalidate: 10 } }); belirlenen saniye cinsinden süre sonunda veriyi tekrar çek tekrar
-const URL = `http://localhost:8000/users`;
+const URL = `http://localhost:8000/users`; 
 
 //* force-cahhe
 export const getUsers = async () => {
@@ -11,7 +11,7 @@ export const getUsers = async () => {
   const res = await fetch(URL);
   if (!res.ok) {
     throw new Error("Failed to fetch data");
-  }
+  } 
   const data = await res.json();
   return data;
 };
@@ -56,7 +56,7 @@ export const addFriends = async (friend) => {
       "Content-Type": "application/json",
       // 'Content-Type': 'application/x-www-form-urlencoded',
     },
-    body: JSON.stringify(friend),
+    body: JSON.stringify(friend), 
   });
   if (!res.ok) {
     throw new Error("Failed to fetch data");
