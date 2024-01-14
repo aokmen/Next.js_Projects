@@ -15,7 +15,7 @@ export const getUsers = async () => {
   const data = await res.json();
   return data;
 };
-
+ 
 //* revalidate
 // export const getUsers = async () => {
 //   //* Automatically revalidate data after a certain amount of time has passed. This is useful for data that changes infrequently and freshness is not as critical.
