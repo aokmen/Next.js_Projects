@@ -25,7 +25,7 @@ const AuthContextProvider = ({ children }) => {
 
   useEffect(() => {
     userObserver();
-  }, []);
+  }, []); 
 
   const createUser = async (email, password, displayName) => {
     try {
